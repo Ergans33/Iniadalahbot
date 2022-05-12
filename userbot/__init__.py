@@ -170,10 +170,10 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/grey423/CilikUserbot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Ergans33/Iniadalahbot"
 )
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Cilik-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Iniadalahbot")
 
 # SQL Database URI
 DB_URI = os.environ.get("DATABASE_URL", None)
@@ -253,11 +253,11 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/313d66dc99098a72259e1.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/313d66dc99098a72259e1.jpg"
 )
 
 # Picture For VCPLUGIN
@@ -353,7 +353,7 @@ except Exception as e:
     
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Cilik-Userbot v{BOT_VER} is back up and running!**\n\n"
+        f"**Iniadalahbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {owner}"
@@ -472,7 +472,7 @@ with bot:
                 Button.inline("VC-Plugin 📺", data="cilik_inline"),
             ],
             [
-                Button.url("📣 Updates", f"https://t.me/CilikProject"),
+                Button.url("📣 Updates", f"https://t.me/gaclexa"),
                 Button.url("Settings 🛠️ ", f"t.me/{botusername}"),
             ],
             [Button.inline("🗑️ Close", data="close")],
@@ -560,7 +560,7 @@ with bot:
                 current_page_number = int(looters)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
+                text = f"**🕹️ Iniadalahbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
                 await event.edit(
                     text,
                     file=ciliklogo,
@@ -579,7 +579,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**"
+                text = f"**🕹️ Iniadalah Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**"
                 await event.edit(
                     text,
                     file=ciliklogo,
@@ -600,28 +600,26 @@ with bot:
                 result = await event.builder.photo(
                     file=ciliklogo,
                     link_preview=False,
-                    text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
+                    text = f"**🕹️ Iniadalah Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Cilik - Userbot",
-                    url="https://t.me/CilikSupport",
+                    description="Repository Iniadalahbot",
+                    url="gaclexa",
                     thumb=InputWebDocument(
                         ALIVE_LOGO,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Cilik-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner Repo :** [Grey </>](https://t.me/greyyvbss)\n✪ **Support :** @CilikSupport\n✪ **Repository :** [Cilik-Userbot](https://github.com/grey423/CilikUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Iniadalahbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner Repo :** [Grey </>](https://t.me/greyyvbss)\n✪ **Support :** @CilikSupport\n✪ **Repository :** [Cilik-Userbot](https://github.com/grey423/CilikUserbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url(
-                                "ɢʀᴏᴜᴘ",
-                                "https://t.me/CilikSupport"),
+                            
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/grey423/CilikUserbot"),
+                                "https://github.com/Ergans33/Iniadalahbot"),
                         ],
                     ],
                     link_preview=False,
@@ -660,23 +658,21 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ Cilik-Userbot ✨",
-                    description="Cilik - Userbot | Telethon",
-                    url="https://t.me/CilikSupport",
+                    title="✨ Iniadalahbot ✨",
+                    description="Iniadalahbot | Telethon",
+                    url="https://t.me/gaclexa",
                     thumb=InputWebDocument(
                         ALIVE_LOGO,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Cilik-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✪ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @CilikProject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Iniadalahbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✪ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @Ergans\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url(
-                                "Groups",
-                                "https://t.me/CilikSupport"),
+                            
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/grey423/CilikUserbot"),
+                                "https://github.com/Ergans33/Iniadalahbot"),
                         ],
                     ],
                     link_preview=False,
@@ -725,7 +721,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
                 # https://t.me/TelethonChat/115200                               # @Fliks-Userbot    
                 text = (
-                    f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**")
+                    f"**🕹️ Iniadalahbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**")
                 await event.edit(
                     text,
                     file=ciliklogo,

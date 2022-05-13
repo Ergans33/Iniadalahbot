@@ -1,2 +1,2 @@
 # Extra Resources for Iniadalahbot
-Repository [CilikUserbot](https://github.com/Ergans33/Iniadalahbot)
+Repository [Iniadalahbot](https://github.com/Ergans33/Iniadalahbot)

@@ -1,0 +1,46 @@
+
+update() {
+	sudo apt-get update && sudo apt-get upgrade -y
+}
+
+pprint (){
+    printf """$cpurple $1"""
+}
+
+packages(){
+	sudo apt-get install python3-pip && apt-get install ffmpeg -y
+}
+
+node(){
+	curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
+}
+
+repo(){
+	git clone https://github.com/Ergans33/Iniadalahbot &&  cd Iniadalahbot
+}
+
+installation(){
+	pip3 install -U -r requirements.txt
+}
+
+
+clear
+
+
+read api_id
+sleep 1
+
+read api_hash
+sleep 1
+
+read string_session
+sleep 1
+
+
+if [-f .env]; then
+sudo rm .env
+fi
+echo """API_ID = $api_id
+API_HASH = $api_hash
+STRING_SESSION = $string_session
+clear

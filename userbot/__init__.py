@@ -595,7 +595,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@CilikUserbot"):
+            if event.query.user_id == uid and query.startswith("@Iniadalahbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
                     file=ciliklogo,
@@ -613,7 +613,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text="**Iniadalahbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner Repo :** [Grey </>](https://t.me/greyyvbss)\n✪ **Support :** @CilikSupport\n✪ **Repository :** [Cilik-Userbot](https://github.com/grey423/CilikUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Iniadalahbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner Repo :** [Grey </>](https://t.me/greyyvbss)\n✪ **Support :** @CilikSupport\n✪ **Repository :** [Cilik-Userbot](https://github.com/)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             

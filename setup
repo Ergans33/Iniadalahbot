@@ -18,7 +18,7 @@ node(){
 }
 
 repo(){
-	git clone https://github.com/Ergans33/CilikMusic &&  cd CilikMusic
+	git clone https://github.com/Ergans33/Iniadalahbot &&  cd Iniadalahbot
 }
 
 installation(){

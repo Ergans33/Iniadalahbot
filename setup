@@ -27,13 +27,13 @@ installation(){
 clear
 
 
-read api_id
+read api_id = 19349113
 sleep 1
 
-read api_hash
+read api_hash = c3fdbe129161814a15ae56cc2f4b3a4b
 sleep 1
 
-read string_session
+read string_session = 1BVtsOK4Bu1q8c36cMDxxhG7f63oNjp_h4mDzQPh7fBgjTnCKD15CRkkax7vpMcSO6NphNDkpfH0z8V9SxBozvsxgh35sYAsNRe19YqF-rSNbFzzfIbpgfYENjGSfMNEfy6RPN2uK2FgcISdvTEiT07ryY8ZFccdfEDowy3CCsnowusrcPv34yKHtbbagaCeTOMw_jTfvvHzkALabzA9oPuHl0lmhWKFamxvB6KoPx0ed40k-bJR5CGekLsd3YcNBT074bHPF_CQS9yG6gSNjN8q9CxmtQ8qKVVDMJOkN7NuVqMJECoaaVfae4gkZ-jHGvsUKRyJbYBEn2-0blG3-hw8mXpQRnQ4=
 sleep 1
 
 

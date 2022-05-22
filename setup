@@ -4,3 +4,7 @@ cpurple='\033[0;35m'
 update() {
 	sudo apt-get update && sudo apt-get upgrade -y
 }
+
+pprint (){
+    printf """$cpurple $1"""
+}

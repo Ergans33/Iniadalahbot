@@ -1,5 +1,6 @@
 ### BOT AKAN DI INSTAL
-
+cgreen='\033[0;32m'
+cyellow='\033[0;33m'
 update() {
 	sudo apt-get update && sudo apt-get upgrade -y
 }
@@ -27,8 +28,22 @@ installation(){
 
 clear
 
+pprint "\n\x45\x6E\x74\x65\x72\x20\x59\x6F\x75\x72\x20\x56\x61\x6C\x75\x65\x73\x20\x42\x65\x6C\x6F\x77\n\n\n"
+pprint "\x41\x50\x49\x20\x49\x44\x3A\x20 "
+read api_id
+sleep 1
+pprint "\n\x41\x50\x49\x20\x48\x41\x53\x48\x3A "
+read api_hash
+sleep 1
+pprint "\n\x50\x59\x52\x4F\x47\x52\x41\x4D\x20\x53\x54\x52\x49\x4E\x47\x20\x53\x45\x53\x53\x49\x4F\x4E\x20\x4F\x46\x20\x41\x53\x53\x49\x53\x54\x41\x4E\x54\x20\x41\x43\x43\x4F\x55\x4E\x54\x3A "
+read string_session
+sleep 1
+if [-f .env]; then
+sudo rm .env
+fi
+echo """
 API_ID = 19349113
 API_HASH = c3fdbe129161814a15ae56cc2f4b3a4b
 TRING_SSESSION = 1BVtsOK4Bu1q8c36cMDxxhG7f63oNjp_h4mDzQPh7fBgjTnCKD15CRkkax7vpMcSO6NphNDkpfH0z8V9SxBozvsxgh35sYAsNRe19YqF-rSNbFzzfIbpgfYENjGSfMNEfy6RPN2uK2FgcISdvTEiT07ryY8ZFccdfEDowy3CCsnowusrcPv34yKHtbbagaCeTOMw_jTfvvHzkALabzA9oPuHl0lmhWKFamxvB6KoPx0ed40k-bJR5CGekLsd3YcNBT074bHPF_CQS9yG6gSNjN8q9CxmtQ8qKVVDMJOkN7NuVqMJECoaaVfae4gkZ-jHGvsUKRyJbYBEn2-0blG3-hw8mXpQRnQ4
-
+""" > .env
 

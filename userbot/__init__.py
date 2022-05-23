@@ -46,7 +46,7 @@ def STORAGE(n):
     return Storage(Path("data") / n)
 
 
-load_dotenv("config.env")
+load_dotenv("sample.env")
 
 StartTime = time.time()
 repo = Repo()
